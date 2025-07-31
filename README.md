@@ -72,29 +72,8 @@ go build -o todo ./cmd/todo
 ./todo load --file=import.json
 ./todo load --file=import.csv
 
-
-## Структура проекта
-
-todo-app/
-├── cmd/
-│   └── todo/             # Точка входа в приложение
-│       └── main.go
-├── internal/
-│   ├── todo/             # Логика работы с задачами
-│   │   ├── manager.go
-│   │   └── task.go
-│   └── storage/          # Работа с файловым хранилищем
-│       ├── csv_storage.go
-│       └── json_storage.go
-├── go.mod                # Файл модуля Go
-└── README.md             # Документация
-
-
 ## Особенности
 - Автоматическое сохранение данных в файл `tasks.json`
 - Автогенерация ID задач
 - Поддержка русского языка в командах
 - Детальная обработка ошибок
-
-## Лицензия
-[MIT License](LICENSE)
